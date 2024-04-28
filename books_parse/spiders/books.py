@@ -15,8 +15,6 @@ class Book:
     upc: str
 
 
-
-
 class BooksSpider(scrapy.Spider):
     name = "books"
     allowed_domains = ["books.toscrape.com"]
