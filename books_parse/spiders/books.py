@@ -1,8 +1,20 @@
+from dataclasses import dataclass
 import asyncio
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from books_parse.items import Book
+
+@dataclass
+class Book:
+    title: str
+    price: float
+    amount_in_stock: int
+    rating: int
+    category: str
+    description: str
+    upc: str
+
+
 
 
 class BooksSpider(scrapy.Spider):
