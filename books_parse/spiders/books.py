@@ -4,6 +4,7 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
+
 @dataclass
 class Book:
     title: str
@@ -64,4 +65,3 @@ async def run_spider():
 
 if __name__ == "__main__":
     asyncio.run(run_spider())
-
